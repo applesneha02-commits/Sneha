@@ -1,14 +1,2968 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEOdoc</title>
-</head>
-<body>
-   <center><hi>TOP SEO WEBSITES</hi></center> 
-   <center><hi>TOP digitaltools</hi></center> 
-   <img width="80%" src="360_F_275879381_ARBnyLcOKNJPiJJgDWvcTIm1titf2KR2.jpg" alt="360">
-   <center><h1>Hello world</h1></center>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>
+      GrowthHive Media - Social Media Marketing Agency | SMM, SEO & Paid Ads
+    </title>
+
+    <!-- Basic SEO -->
+    <meta
+      name="description"
+      content="GrowthHive Media is a modern Social Media Marketing Agency helping brands grow with powerful SMM strategies, content creation, SEO, paid ads, and analytics."
+    />
+    <meta
+      name="keywords"
+      content="social media marketing agency, digital marketing, SEO, paid advertising, content creation, growth marketing"
+    />
+    <meta name="author" content="GrowthHive Media" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="GrowthHive Media - Social Media Marketing Agency" />
+    <meta
+      property="og:description"
+      content="Grow your brand with powerful social media strategies, SEO, and paid campaigns."
+    />
+    <meta property="og:url" content="https://example-agency.com" />
+    <meta
+      property="og:image"
+      content="https://images.pexels.com/photos/6476589/pexels-photo-6476589.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "GrowthHive Media",
+        "image": "https://images.pexels.com/photos/6476589/pexels-photo-6476589.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "url": "https://example-agency.com",
+        "telephone": "+91-98765-43210",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Digital Avenue",
+          "addressLocality": "Hyderabad",
+          "postalCode": "500001",
+          "addressCountry": "IN"
+        },
+        "sameAs": [
+          "https://facebook.com",
+          "https://instagram.com",
+          "https://www.linkedin.com"
+        ]
+      }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --bg-dark: #020b09;
+        --bg-card: #081510;
+        --bg-light: #f5fff9;
+        --primary: #00b894;
+        --primary-soft: rgba(0, 184, 148, 0.18);
+        --primary-strong: #00d3aa;
+        --accent: #a3ffbe;
+        --accent-soft: rgba(163, 255, 190, 0.12);
+        --danger: #ff7675;
+        --text-main: #f9fffc;
+        --text-muted: #9bb4a6;
+        --border-subtle: rgba(255, 255, 255, 0.06);
+        --shadow-soft: 0 24px 60px rgba(0, 0, 0, 0.55);
+        --radius-lg: 22px;
+        --radius-md: 14px;
+        --radius-pill: 999px;
+        --nav-height: 76px;
+        --transition-fast: 0.18s ease-out;
+        --transition-med: 0.28s ease;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        background: radial-gradient(circle at top left, #03231b, #020404 55%);
+        color: var(--text-main);
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+        transition: background 0.3s ease, color 0.3s ease;
+      }
+
+      body.light {
+        background: radial-gradient(circle at top left, #ffffff, #e6f4ec 60%);
+        color: #081510;
+      }
+
+      body.light .nav,
+      body.light .section-card,
+      body.light .stats,
+      body.light .testimonial-card,
+      body.light .service-card,
+      body.light .portfolio-card,
+      body.light .blog-card,
+      body.light .admin-panel,
+      body.light .contact-wrapper,
+      body.light .analytics-grid,
+      body.light .gallery-grid figure {
+        background: #ffffff;
+        border-color: rgba(0, 0, 0, 0.06);
+      }
+
+      body.light .hero {
+        background: linear-gradient(135deg, #ffffff 0%, #e7fff4 60%, #ccffe7);
+      }
+
+      body.light .nav-logo span {
+        color: #081510;
+      }
+
+      body.light .badge-pill,
+      body.light .mode-toggle {
+        background: #f3f7f5;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      video {
+        max-width: 100%;
+        display: block;
+      }
+
+      main {
+        padding-top: var(--nav-height);
+      }
+
+      .container {
+        width: min(1120px, 100% - 32px);
+        margin: 0 auto;
+      }
+
+      /* NAVBAR */
+      .nav {
+        position: fixed;
+        inset-inline: 0;
+        top: 0;
+        z-index: 50;
+        backdrop-filter: blur(20px);
+        background: radial-gradient(circle at top left, rgba(0, 184, 148, 0.18), rgba(2, 4, 4, 0.98));
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      .nav-inner {
+        height: var(--nav-height);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .nav-left {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .nav-logo {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: rgba(2, 8, 6, 0.85);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.55);
+        border: 1px solid rgba(163, 255, 190, 0.32);
+      }
+
+      .nav-logo-icon {
+        width: 24px;
+        height: 24px;
+        border-radius: 10px;
+        background: conic-gradient(
+          from 160deg,
+          #00d3aa,
+          #a3ffbe,
+          #00b894,
+          #00d3aa
+        );
+        display: grid;
+        place-items: center;
+        color: #020805;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .nav-logo span {
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .badge-pill {
+        padding: 4px 10px;
+        border-radius: 999px;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(163, 255, 190, 0.16);
+        color: var(--accent);
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        font-size: 14px;
+      }
+
+      .nav-links a {
+        position: relative;
+        padding-block: 4px;
+        color: var(--text-muted);
+        transition: color var(--transition-fast);
+      }
+
+      .nav-links a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 0;
+        height: 2px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, #a3ffbe, #00d3aa);
+        transition: width var(--transition-fast);
+      }
+
+      .nav-links a:hover {
+        color: var(--text-main);
+      }
+
+      .nav-links a:hover::after {
+        width: 100%;
+      }
+
+      .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 10px 18px;
+        border-radius: var(--radius-pill);
+        border: 1px solid transparent;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: transform var(--transition-fast),
+          box-shadow var(--transition-fast), background var(--transition-fast),
+          border-color var(--transition-fast);
+        white-space: nowrap;
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, #00d3aa, #00b894);
+        color: #020704;
+        box-shadow: 0 12px 40px rgba(0, 211, 170, 0.45);
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 18px 55px rgba(0, 211, 170, 0.6);
+      }
+
+      .btn-outline {
+        border-color: rgba(163, 255, 190, 0.35);
+        background: rgba(2, 8, 6, 0.85);
+        color: var(--accent);
+      }
+
+      .btn-outline:hover {
+        background: rgba(163, 255, 190, 0.08);
+      }
+
+      .mode-toggle {
+        width: 40px;
+        height: 24px;
+        border-radius: 999px;
+        border: 1px solid rgba(163, 255, 190, 0.32);
+        background: rgba(3, 16, 12, 0.95);
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: 2px;
+      }
+
+      .mode-toggle-thumb {
+        width: 18px;
+        height: 18px;
+        border-radius: 999px;
+        background: radial-gradient(circle at 30% 20%, #ffffff, #a3ffbe);
+        transform: translateX(0);
+        transition: transform 0.22s ease-out, background 0.22s ease-out;
+      }
+
+      body.light .mode-toggle-thumb {
+        transform: translateX(14px);
+        background: radial-gradient(circle at 30% 20%, #fff8d1, #ffcf66);
+      }
+
+      .nav-toggle {
+        display: none;
+        width: 32px;
+        height: 32px;
+        border-radius: 999px;
+        border: 1px solid rgba(163, 255, 190, 0.35);
+        background: rgba(2, 8, 6, 0.9);
+        color: var(--accent);
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      /* HERO */
+      .hero {
+        position: relative;
+        padding: 64px 0 80px;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.4fr);
+        gap: 40px;
+        align-items: center;
+      }
+
+      .hero-kicker {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: rgba(0, 0, 0, 0.7);
+        border: 1px solid rgba(163, 255, 190, 0.45);
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: var(--accent);
+        margin-bottom: 14px;
+      }
+
+      .hero-kicker span {
+        display: inline-flex;
+        padding: 2px 6px;
+        border-radius: 999px;
+        background: rgba(0, 184, 148, 0.2);
+        font-weight: 600;
+      }
+
+      .hero-title {
+        font-size: clamp(2.4rem, 4vw, 3.2rem);
+        line-height: 1.05;
+        margin: 0 0 14px;
+        letter-spacing: -0.04em;
+      }
+
+      .hero-title span {
+        background: linear-gradient(135deg, #a3ffbe, #00d3aa);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+
+      .hero-subtitle {
+        margin: 0 0 22px;
+        font-size: 0.98rem;
+        color: var(--text-muted);
+        max-width: 34rem;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 18px;
+      }
+
+      .hero-note {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        color: var(--text-muted);
+      }
+
+      .hero-note-pill {
+        width: 20px;
+        height: 20px;
+        border-radius: 999px;
+        background: radial-gradient(circle at 30% 20%, #a3ffbe, #00b894);
+      }
+
+      .stats {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        margin-top: 24px;
+        padding: 14px 16px;
+        border-radius: var(--radius-lg);
+        background: radial-gradient(circle at top left, rgba(0, 184, 148, 0.12), rgba(2, 7, 5, 0.9));
+        border: 1px solid rgba(163, 255, 190, 0.3);
+      }
+
+      .stat-item {
+        min-width: 120px;
+      }
+
+      .stat-number {
+        font-size: 1.4rem;
+        font-weight: 600;
+        letter-spacing: -0.03em;
+      }
+
+      .stat-label {
+        font-size: 0.8rem;
+        color: var(--text-muted);
+      }
+
+      .hero-media {
+        position: relative;
+      }
+
+      .hero-card {
+        position: relative;
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        border: 1px solid rgba(163, 255, 190, 0.4);
+        background: radial-gradient(circle at top, rgba(0, 184, 148, 0.15), rgba(0, 0, 0, 0.95));
+        box-shadow: var(--shadow-soft);
+        isolation: isolate;
+      }
+
+      .hero-video-wrapper {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        filter: saturate(1.1);
+      }
+
+      .hero-video-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          135deg,
+          rgba(0, 0, 0, 0.75),
+          transparent 40%,
+          rgba(0, 184, 148, 0.35)
+        );
+      }
+
+      .hero-tag {
+        position: absolute;
+        left: 16px;
+        top: 14px;
+        padding: 5px 10px;
+        border-radius: 999px;
+        background: rgba(0, 0, 0, 0.72);
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        border: 1px solid rgba(163, 255, 190, 0.4);
+      }
+
+      .hero-badge {
+        position: absolute;
+        right: 16px;
+        bottom: 16px;
+        padding: 8px 12px;
+        border-radius: var(--radius-md);
+        background: rgba(1, 12, 8, 0.93);
+        border: 1px solid rgba(163, 255, 190, 0.35);
+        font-size: 11px;
+      }
+
+      .hero-badge strong {
+        color: var(--accent);
+      }
+
+      .clients-strip {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        padding: 12px 16px;
+        border-radius: var(--radius-md);
+        background: rgba(2, 8, 6, 0.95);
+        border: 1px solid rgba(163, 255, 190, 0.22);
+        margin-top: 12px;
+      }
+
+      .clients-strip p {
+        margin: 0;
+        font-size: 11px;
+        color: var(--text-muted);
+      }
+
+      .clients-logos {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .logo-pill {
+        padding: 5px 10px;
+        border-radius: 999px;
+        font-size: 11px;
+        background: rgba(0, 0, 0, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      /* Sections */
+      section {
+        padding: 40px 0 24px;
+      }
+
+      .section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 16px;
+        margin-bottom: 18px;
+      }
+
+      .section-label {
+        font-size: 11px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 4px;
+      }
+
+      .section-title {
+        margin: 0;
+        font-size: 1.5rem;
+        letter-spacing: -0.03em;
+      }
+
+      .section-subtitle {
+        margin: 0;
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        max-width: 26rem;
+      }
+
+      .section-card {
+        border-radius: var(--radius-lg);
+        background: rgba(2, 8, 6, 0.95);
+        border: 1px solid var(--border-subtle);
+        padding: 20px 18px;
+        box-shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
+      }
+
+      /* Services */
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .service-card {
+        border-radius: var(--radius-md);
+        padding: 16px 14px;
+        background: radial-gradient(circle at top left, rgba(0, 184, 148, 0.14), rgba(2, 8, 6, 0.95));
+        border: 1px solid rgba(163, 255, 190, 0.24);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .service-icon {
+        width: 34px;
+        height: 34px;
+        border-radius: 14px;
+        background: rgba(0, 0, 0, 0.75);
+        display: grid;
+        place-items: center;
+        font-size: 18px;
+      }
+
+      .service-title {
+        font-size: 0.98rem;
+        margin: 0;
+      }
+
+      .service-text {
+        font-size: 0.82rem;
+        color: var(--text-muted);
+        margin: 0;
+      }
+
+      .service-footer {
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.8rem;
+      }
+
+      .chip {
+        padding: 3px 8px;
+        border-radius: 999px;
+        background: rgba(0, 0, 0, 0.6);
+        border: 1px solid rgba(163, 255, 190, 0.3);
+        font-size: 0.7rem;
+      }
+
+      /* Testimonials */
+      .testimonials-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.1fr);
+        gap: 22px;
+      }
+
+      .testimonial-slider {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .testimonial-card {
+        border-radius: var(--radius-lg);
+        padding: 18px 16px;
+        background: rgba(2, 8, 6, 0.95);
+        border: 1px solid rgba(163, 255, 190, 0.3);
+        min-height: 160px;
+      }
+
+      .testimonial-text {
+        font-size: 0.9rem;
+        color: var(--text-main);
+        margin-bottom: 10px;
+      }
+
+      .testimonial-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.82rem;
+        color: var(--text-muted);
+      }
+
+      .testimonial-avatar {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #00b894, #a3ffbe);
+        display: grid;
+        place-items: center;
+        font-weight: 600;
+        color: #021009;
+        margin-right: 10px;
+      }
+
+      .testimonial-user {
+        display: flex;
+        align-items: center;
+      }
+
+      .testimonial-controls {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 8px;
+        margin-top: 10px;
+      }
+
+      .circle-btn {
+        width: 28px;
+        height: 28px;
+        border-radius: 999px;
+        border: 1px solid rgba(163, 255, 190, 0.4);
+        background: rgba(0, 0, 0, 0.7);
+        display: grid;
+        place-items: center;
+        color: var(--accent);
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+      .logos-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .logo-card {
+        border-radius: var(--radius-md);
+        padding: 10px 8px;
+        background: rgba(2, 8, 6, 0.88);
+        border: 1px dashed rgba(163, 255, 190, 0.35);
+        font-size: 0.72rem;
+        text-align: center;
+        color: var(--text-muted);
+      }
+
+      /* Portfolio */
+      .filter-row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 16px;
+      }
+
+      .filter-btn {
+        padding: 5px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(163, 255, 190, 0.35);
+        background: rgba(0, 0, 0, 0.7);
+        font-size: 0.78rem;
+        cursor: pointer;
+        color: var(--text-muted);
+      }
+
+      .filter-btn.active {
+        background: linear-gradient(135deg, #00d3aa, #00b894);
+        color: #020704;
+        border-color: transparent;
+      }
+
+      .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .portfolio-card {
+        border-radius: var(--radius-md);
+        overflow: hidden;
+        background: rgba(2, 8, 6, 0.95);
+        border: 1px solid var(--border-subtle);
+        display: flex;
+        flex-direction: column;
+      }
+
+      .portfolio-media {
+        position: relative;
+        overflow: hidden;
+        max-height: 140px;
+      }
+
+      .portfolio-media img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1.02);
+        transition: transform 0.4s ease-out;
+      }
+
+      .portfolio-card:hover .portfolio-media img {
+        transform: scale(1.06);
+      }
+
+      .portfolio-body {
+        padding: 10px 11px 12px;
+        font-size: 0.8rem;
+      }
+
+      .portfolio-meta {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        margin-top: 6px;
+        font-size: 0.76rem;
+        color: var(--text-muted);
+      }
+
+      .metric-pill {
+        padding: 2px 8px;
+        border-radius: 999px;
+        background: rgba(0, 184, 148, 0.16);
+        color: var(--accent);
+      }
+
+      .before-after {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 16px;
+      }
+
+      .before-after-card {
+        border-radius: var(--radius-md);
+        padding: 10px 11px;
+        background: rgba(2, 8, 6, 0.95);
+        border: 1px solid var(--border-subtle);
+        font-size: 0.78rem;
+      }
+
+      .metric-row {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.76rem;
+        margin-bottom: 4px;
+      }
+
+      /* Blog & Admin */
+      .blog-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1.7fr) minmax(0, 1.1fr);
+        gap: 20px;
+      }
+
+      .blog-list {
+        display: grid;
+        gap: 10px;
+      }
+
+      .blog-card {
+        border-radius: var(--radius-md);
+        padding: 12px 11px;
+        background: rgba(2, 8, 6, 0.95);
+        border: 1px solid var(--border-subtle);
+        display: grid;
+        grid-template-columns: 92px minmax(0, 1fr);
+        gap: 10px;
+      }
+
+      .blog-thumb {
+        border-radius: 10px;
+        overflow: hidden;
+        height: 72px;
+      }
+
+      .blog-body {
+        font-size: 0.8rem;
+      }
+
+      .blog-meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        margin-top: 4px;
+        font-size: 0.72rem;
+        color: var(--text-muted);
+      }
+
+      .badge-category {
+        padding: 2px 6px;
+        border-radius: 999px;
+        background: rgba(0, 0, 0, 0.65);
+        border: 1px solid rgba(163, 255, 190, 0.32);
+      }
+
+      .blog-search-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 10px;
+      }
+
+      .input {
+        border-radius: var(--radius-pill);
+        border: 1px solid rgba(163, 255, 190, 0.32);
+        background: rgba(2, 8, 6, 0.94);
+        padding: 7px 11px;
+        color: inherit;
+        font-size: 0.78rem;
+        outline: none;
+        min-width: 0;
+      }
+
+      .input::placeholder {
+        color: var(--text-muted);
+      }
+
+      .admin-panel {
+        border-radius: var(--radius-lg);
+        padding: 12px 12px 14px;
+        background: radial-gradient(circle at top left, rgba(0, 184, 148, 0.22), rgba(2, 8, 6, 0.98));
+        border: 1px solid rgba(163, 255, 190, 0.35);
+        font-size: 0.8rem;
+      }
+
+      .admin-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 8px;
+      }
+
+      .admin-status {
+        font-size: 0.74rem;
+        color: var(--text-muted);
+      }
+
+      .admin-form {
+        display: grid;
+        gap: 7px;
+        margin-top: 6px;
+      }
+
+      .admin-form label {
+        font-size: 0.72rem;
+        display: block;
+        margin-bottom: 2px;
+      }
+
+      .textarea {
+        border-radius: 10px;
+        border: 1px solid rgba(163, 255, 190, 0.32);
+        background: rgba(2, 8, 6, 0.94);
+        padding: 7px 9px;
+        color: inherit;
+        font-size: 0.78rem;
+        resize: vertical;
+        min-height: 60px;
+      }
+
+      /* About / Team */
+      .about-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.2fr);
+        gap: 20px;
+      }
+
+      .about-text {
+        font-size: 0.86rem;
+        color: var(--text-muted);
+      }
+
+      .mission-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .mission-card {
+        border-radius: var(--radius-md);
+        padding: 10px;
+        background: rgba(2, 8, 6, 0.96);
+        border: 1px solid var(--border-subtle);
+        font-size: 0.8rem;
+      }
+
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 10px;
+      }
+
+      .team-card {
+        border-radius: var(--radius-md);
+        padding: 10px 9px;
+        background: rgba(2, 8, 6, 0.96);
+        border: 1px solid var(--border-subtle);
+        font-size: 0.78rem;
+        text-align: center;
+      }
+
+      .team-avatar {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        margin: 0 auto 6px;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .team-name {
+        font-weight: 500;
+        margin-bottom: 2px;
+      }
+
+      .team-role {
+        font-size: 0.72rem;
+        color: var(--text-muted);
+      }
+
+      .team-socials {
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        margin-top: 6px;
+        font-size: 0.8rem;
+        color: var(--accent);
+      }
+
+      .about-video {
+        border-radius: var(--radius-md);
+        overflow: hidden;
+        border: 1px solid rgba(163, 255, 190, 0.45);
+        box-shadow: var(--shadow-soft);
+      }
+
+      /* Contact */
+      .contact-wrapper {
+        border-radius: var(--radius-lg);
+        padding: 18px 16px;
+        background: rgba(2, 8, 6, 0.96);
+        border: 1px solid var(--border-subtle);
+        display: grid;
+        grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.2fr);
+        gap: 16px;
+      }
+
+      .contact-form-grid {
+        display: grid;
+        gap: 8px;
+      }
+
+      .contact-form-grid label {
+        font-size: 0.76rem;
+        display: block;
+        margin-bottom: 2px;
+      }
+
+      .contact-map {
+        border-radius: var(--radius-md);
+        overflow: hidden;
+        border: 1px solid rgba(163, 255, 190, 0.32);
+        height: 220px;
+      }
+
+      .contact-side {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 0.8rem;
+      }
+
+      .social-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .social-pill {
+        padding: 6px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(163, 255, 190, 0.32);
+        background: rgba(0, 0, 0, 0.7);
+        font-size: 0.78rem;
+      }
+
+      .whatsapp-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 7px 12px;
+        border-radius: 999px;
+        border: 1px solid rgba(0, 255, 135, 0.7);
+        background: radial-gradient(circle at top left, #00ff85, #008f46);
+        color: #02130a;
+        font-size: 0.8rem;
+        margin-top: 4px;
+      }
+
+      /* Newsletter & Analytics */
+      .newsletter-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      .analytics-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 12px;
+      }
+
+      .analytics-card {
+        border-radius: var(--radius-md);
+        padding: 10px 9px;
+        background: rgba(2, 8, 6, 0.96);
+        border: 1px solid var(--border-subtle);
+        font-size: 0.78rem;
+      }
+
+      .progress-bar {
+        height: 6px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.06);
+        overflow: hidden;
+        margin-top: 4px;
+      }
+
+      .progress-fill {
+        height: 100%;
+        border-radius: inherit;
+        background: linear-gradient(90deg, #a3ffbe, #00d3aa);
+        width: 0;
+      }
+
+      /* Gallery */
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 8px;
+      }
+
+      .gallery-grid figure {
+        margin: 0;
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        cursor: zoom-in;
+      }
+
+      .gallery-grid img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.35s ease-out;
+      }
+
+      .gallery-grid figure:hover img {
+        transform: scale(1.06);
+      }
+
+      .lightbox {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.9);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 60;
+      }
+
+      .lightbox.active {
+        display: flex;
+      }
+
+      .lightbox img,
+      .lightbox video {
+        max-width: 88vw;
+        max-height: 82vh;
+        border-radius: 18px;
+        box-shadow: 0 22px 70px rgba(0, 0, 0, 0.9);
+      }
+
+      .lightbox-close {
+        position: absolute;
+        top: 16px;
+        right: 18px;
+        width: 32px;
+        height: 32px;
+        border-radius: 999px;
+        border: 1px solid rgba(163, 255, 190, 0.7);
+        background: rgba(0, 0, 0, 0.8);
+        color: var(--accent);
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+      }
+
+      /* Social feed mock */
+      .feed-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .feed-card {
+        border-radius: var(--radius-md);
+        padding: 10px 9px;
+        background: rgba(2, 8, 6, 0.96);
+        border: 1px solid var(--border-subtle);
+        font-size: 0.78rem;
+      }
+
+      /* Footer */
+      footer {
+        padding: 18px 0 24px;
+        font-size: 0.78rem;
+        color: var(--text-muted);
+      }
+
+      .footer-inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+        padding-top: 12px;
+      }
+
+      .footer-links {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .floating-live-chat {
+        position: fixed;
+        right: 18px;
+        bottom: 18px;
+        z-index: 40;
+      }
+
+      .live-chat-btn {
+        border-radius: 999px;
+        padding: 8px 12px;
+        border: 1px solid rgba(0, 184, 148, 0.85);
+        background: radial-gradient(circle at top left, rgba(0, 184, 148, 0.9), #02120d);
+        color: #e6fff7;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 0.8rem;
+        cursor: pointer;
+        box-shadow: 0 18px 50px rgba(0, 0, 0, 0.7);
+      }
+
+      /* Scroll animations */
+      .reveal {
+        opacity: 0;
+        transform: translateY(14px);
+        transition: opacity 0.45s ease-out, transform 0.45s ease-out;
+      }
+
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Responsive */
+      @media (max-width: 960px) {
+        .hero-grid,
+        .testimonials-layout,
+        .blog-layout,
+        .about-layout,
+        .contact-wrapper {
+          grid-template-columns: minmax(0, 1fr);
+        }
+
+        .hero {
+          padding-top: 42px;
+        }
+
+        .clients-strip {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+
+      @media (max-width: 840px) {
+        .services-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .portfolio-grid,
+        .team-grid,
+        .analytics-grid,
+        .feed-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .gallery-grid {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 720px) {
+        .nav-inner {
+          gap: 12px;
+        }
+
+        .nav-links {
+          position: fixed;
+          inset-inline: 0;
+          top: var(--nav-height);
+          padding: 10px 16px 14px;
+          background: rgba(2, 8, 6, 0.98);
+          flex-direction: column;
+          align-items: flex-start;
+          transform-origin: top;
+          transform: scaleY(0);
+          opacity: 0;
+          pointer-events: none;
+        }
+
+        .nav-links.open {
+          transform: scaleY(1);
+          opacity: 1;
+          pointer-events: auto;
+        }
+
+        .nav-toggle {
+          display: inline-flex;
+        }
+
+        .services-grid {
+          grid-template-columns: minmax(0, 1fr);
+        }
+
+        .portfolio-grid,
+        .team-grid,
+        .analytics-grid,
+        .feed-grid {
+          grid-template-columns: minmax(0, 1fr);
+        }
+
+        .gallery-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .section-card {
+          padding: 14px 12px;
+        }
+
+        .contact-wrapper {
+          padding: 14px 12px;
+        }
+
+        .hero-title {
+          font-size: 2.1rem;
+        }
+
+        .hero-subtitle {
+          font-size: 0.92rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .hero-actions {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .btn {
+          width: 100%;
+          justify-content: center;
+        }
+
+        .gallery-grid {
+          grid-template-columns: minmax(0, 1fr);
+        }
+
+        .clients-strip p {
+          font-size: 0.74rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header class="nav">
+      <div class="container nav-inner">
+        <div class="nav-left">
+          <a href="#top" class="nav-logo">
+            <span class="nav-logo-icon">GH</span>
+            <span>GrowthHive Media</span>
+          </a>
+          <span class="badge-pill">Social Media Marketing Agency</span>
+        </div>
+        <nav class="nav-links" id="navLinks">
+          <a href="#hero">Home</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#blog">Blog</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-right">
+          <button class="mode-toggle" id="modeToggle" aria-label="Toggle theme">
+            <div class="mode-toggle-thumb"></div>
+          </button>
+          <button class="btn btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+            Book Consultation
+          </button>
+          <button class="btn btn-primary" onclick="document.getElementById('hero').scrollIntoView({behavior:'smooth'})">
+            Get Started
+          </button>
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            ☰
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- HERO / HOME -->
+      <section class="hero" id="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="hero-kicker">
+              <span>NEW</span>
+              Full‑funnel Social Media Growth
+            </div>
+            <h1 class="hero-title">
+              Grow your brand with
+              <span>powerful social media strategies.</span>
+            </h1>
+            <p class="hero-subtitle">
+              We help ambitious brands turn followers into loyal customers with
+              data‑driven content, performance ads, and always‑on optimization.
+            </p>
+
+            <div class="hero-actions">
+              <button class="btn btn-primary">
+                Get Started
+                <span>↗</span>
+              </button>
+              <button class="btn btn-outline">
+                Book Consultation
+              </button>
+            </div>
+
+            <div class="hero-note">
+              <span class="hero-note-pill"></span>
+              <span>Avg. 4.2x ROAS across 120+ campaigns.</span>
+            </div>
+
+            <div class="stats">
+              <div class="stat-item">
+                <div class="stat-number" data-count="120">0</div>
+                <div class="stat-label">Brands scaled</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-count="4.2">0</div>
+                <div class="stat-label">Avg. ROAS</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-count="980">0</div>
+                <div class="stat-label">Campaigns launched</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number" data-count="32">0</div>
+                <div class="stat-label">Markets served</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-media">
+            <div class="hero-card">
+              <div class="hero-video-wrapper">
+                <video
+                  class="hero-video"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  poster="https://images.pexels.com/photos/6476589/pexels-photo-6476589.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                >
+                  <source
+                    src="https://videos.pexels.com/video-files/6898851/6898851-uhd_2560_1440_30fps.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+                <div class="hero-video-overlay"></div>
+                <div class="hero-tag">Live campaign performance</div>
+                <div class="hero-badge">
+                  <strong>+218% engagement</strong>
+                  on Q4 launch vs last year
+                </div>
+              </div>
+            </div>
+
+            <div class="clients-strip">
+              <p>Trusted by fast‑growing brands around the world.</p>
+              <div class="clients-logos">
+                <span class="logo-pill">NovaWear</span>
+                <span class="logo-pill">UrbanBrew</span>
+                <span class="logo-pill">CloudDesk</span>
+                <span class="logo-pill">ZenFit</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section id="services">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="section-label">Services</div>
+              <h2 class="section-title">
+                Full‑funnel social media marketing.
+              </h2>
+            </div>
+            <p class="section-subtitle">
+              Strategy, content, paid media, SEO, creators, and analytics—built
+              to plug into your team and scale with your brand.
+            </p>
+          </div>
+
+          <div class="section-card reveal">
+            <div class="services-grid">
+              <article class="service-card">
+                <div class="service-icon">📊</div>
+                <h3 class="service-title">Social Media Strategy</h3>
+                <p class="service-text">
+                  Channel mix, audience personas, content pillars, and growth
+                  roadmap tailored to your objectives.
+                </p>
+                <div class="service-footer">
+                  <span class="chip">Playbook + 90‑day roadmap</span>
+                  <button class="btn btn-outline" style="padding: 6px 10px; font-size: 0.75rem;">
+                    View Details
+                  </button>
+                </div>
+              </article>
+
+              <article class="service-card">
+                <div class="service-icon">🎥</div>
+                <h3 class="service-title">Content Creation</h3>
+                <p class="service-text">
+                  High‑impact short‑form video, carousels, and UGC with
+                  optimized hooks and CTAs for every platform.
+                </p>
+                <div class="service-footer">
+                  <span class="chip">Studio + UGC network</span>
+                  <button class="btn btn-outline" style="padding: 6px 10px; font-size: 0.75rem;">
+                    Watch Reel
+                  </button>
+                </div>
+              </article>
+
+              <article class="service-card">
+                <div class="service-icon">💰</div>
+                <h3 class="service-title">Paid Advertising</h3>
+                <p class="service-text">
+                  Meta, TikTok, and Google Ads campaigns optimized for CAC,
+                  ROAS, and scalable acquisition.
+                </p>
+                <div class="service-footer">
+                  <span class="chip">4.2x avg. ROAS</span>
+                  <button class="btn btn-outline" style="padding: 6px 10px; font-size: 0.75rem;">
+                    See Media Plan
+                  </button>
+                </div>
+              </article>
+
+              <article class="service-card">
+                <div class="service-icon">🔍</div>
+                <h3 class="service-title">SEO & Influencers</h3>
+                <p class="service-text">
+                  Search‑optimized content, influencer partnerships, and
+                  cross‑channel amplification to own your niche.
+                </p>
+                <div class="service-footer">
+                  <span class="chip">Creator + SEO stack</span>
+                  <button class="btn btn-outline" style="padding: 6px 10px; font-size: 0.75rem;">
+                    Explore Network
+                  </button>
+                </div>
+              </article>
+            </div>
+
+            <div style="margin-top: 18px; display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.4fr); gap: 16px;">
+              <div>
+                <h3 style="font-size: 0.98rem; margin: 0 0 8px;">
+                  How we scale brands with paid social.
+                </h3>
+                <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0 0 10px;">
+                  Watch a quick walkthrough of our strategy—from creative
+                  testing through to budget scaling and retention campaigns.
+                </p>
+                <ul style="font-size: 0.8rem; color: var(--text-muted); padding-left: 18px; margin: 0;">
+                  <li>Always‑on experimentation framework</li>
+                  <li>Creative sprints and hook testing</li>
+                  <li>Full‑funnel campaign structure for sustainable growth</li>
+                </ul>
+              </div>
+
+              <div style="border-radius: 14px; overflow: hidden; border: 1px solid rgba(163, 255, 190, 0.4);">
+                <iframe
+                  loading="lazy"
+                  width="100%"
+                  height="190"
+                  src="https://www.youtube.com/embed/RP4BIUuIijs"
+                  title="Social Media Case Study"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO / CASE STUDIES -->
+      <section id="portfolio">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="section-label">Portfolio</div>
+              <h2 class="section-title">
+                Campaigns that turned attention into revenue.
+              </h2>
+            </div>
+            <p class="section-subtitle">
+              Explore case studies across Instagram, Facebook, LinkedIn, and
+              performance search campaigns with before/after metrics.
+            </p>
+          </div>
+
+          <div class="section-card reveal">
+            <div class="filter-row">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="instagram">Instagram</button>
+              <button class="filter-btn" data-filter="facebook">Facebook</button>
+              <button class="filter-btn" data-filter="linkedin">LinkedIn</button>
+              <button class="filter-btn" data-filter="search">Google Ads</button>
+            </div>
+
+            <div class="portfolio-grid" id="portfolioGrid">
+              <article class="portfolio-card" data-category="instagram">
+                <div class="portfolio-media">
+                  <img
+                    loading="lazy"
+                    src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="Instagram campaign dashboard"
+                  />
+                </div>
+                <div class="portfolio-body">
+                  <strong>NovaWear – DTC Fashion Launch</strong>
+                  <p style="margin: 4px 0 0; color: var(--text-muted);">
+                    Carousel and Reels system that turned product drops into
+                    weekly hype events.
+                  </p>
+                  <div class="portfolio-meta">
+                    <span class="metric-pill">+312% IG reach</span>
+                    <span>3‑month sprint</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="portfolio-card" data-category="facebook">
+                <div class="portfolio-media">
+                  <img
+                    loading="lazy"
+                    src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="Facebook ad manager"
+                  />
+                </div>
+                <div class="portfolio-body">
+                  <strong>UrbanBrew – Subscription Coffee</strong>
+                  <p style="margin: 4px 0 0; color: var(--text-muted);">
+                    Full‑funnel Facebook/Instagram ads with dynamic product
+                    feeds and retargeting.
+                  </p>
+                  <div class="portfolio-meta">
+                    <span class="metric-pill">3.8x ROAS</span>
+                    <span>Lowered CAC by 42%</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="portfolio-card" data-category="linkedin">
+                <div class="portfolio-media">
+                  <img
+                    loading="lazy"
+                    src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="LinkedIn campaign"
+                  />
+                </div>
+                <div class="portfolio-body">
+                  <strong>CloudDesk – B2B SaaS Leads</strong>
+                  <p style="margin: 4px 0 0; color: var(--text-muted);">
+                    LinkedIn thought‑leadership engine for VP level decision
+                    makers in tech.
+                  </p>
+                  <div class="portfolio-meta">
+                    <span class="metric-pill">+168% SQLs</span>
+                    <span>ABM content</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="portfolio-card" data-category="search">
+                <div class="portfolio-media">
+                  <img
+                    loading="lazy"
+                    src="https://images.pexels.com/photos/6476584/pexels-photo-6476584.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="Google Ads dashboard"
+                  />
+                </div>
+                <div class="portfolio-body">
+                  <strong>ZenFit – Fitness App SEO + Search</strong>
+                  <p style="margin: 4px 0 0; color: var(--text-muted);">
+                    Search‑led strategy with content clusters and high intent
+                    keyword capture.
+                  </p>
+                  <div class="portfolio-meta">
+                    <span class="metric-pill">+192% organic sign‑ups</span>
+                    <span>12‑month program</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="portfolio-card" data-category="instagram">
+                <div class="portfolio-media">
+                  <img
+                    loading="lazy"
+                    src="https://images.pexels.com/photos/1181243/pexels-photo-1181243.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="Reels campaign"
+                  />
+                </div>
+                <div class="portfolio-body">
+                  <strong>GlowLab – Beauty Reels Engine</strong>
+                  <p style="margin: 4px 0 0; color: var(--text-muted);">
+                    Hook‑driven Reels boosting reach and saving production
+                    costs with UGC creators.
+                  </p>
+                  <div class="portfolio-meta">
+                    <span class="metric-pill">+540% video views</span>
+                    <span>CPV ‑61%</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="portfolio-card" data-category="facebook">
+                <div class="portfolio-media">
+                  <img
+                    loading="lazy"
+                    src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="Campaign meeting"
+                  />
+                </div>
+                <div class="portfolio-body">
+                  <strong>FreshKart – Grocery Delivery</strong>
+                  <p style="margin: 4px 0 0; color: var(--text-muted);">
+                    Always‑on promos with geo‑targeting and creative testing
+                    across 8 markets.
+                  </p>
+                  <div class="portfolio-meta">
+                    <span class="metric-pill">+86% order volume</span>
+                    <span>ROAS 3.4x</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="before-after">
+              <div class="before-after-card">
+                <strong style="font-size: 0.84rem;">Before partnering with us</strong>
+                <div class="metric-row">
+                  <span>Monthly reach</span>
+                  <span>180K</span>
+                </div>
+                <div class="metric-row">
+                  <span>Click‑through rate</span>
+                  <span>0.9%</span>
+                </div>
+                <div class="metric-row">
+                  <span>ROAS</span>
+                  <span>1.3x</span>
+                </div>
+              </div>
+              <div class="before-after-card">
+                <strong style="font-size: 0.84rem; color: var(--accent);">After 90‑day sprint</strong>
+                <div class="metric-row">
+                  <span>Monthly reach</span>
+                  <span>780K</span>
+                </div>
+                <div class="metric-row">
+                  <span>Click‑through rate</span>
+                  <span>2.8%</span>
+                </div>
+                <div class="metric-row">
+                  <span>ROAS</span>
+                  <span>4.6x</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 14px; border-radius: 14px; overflow: hidden; border: 1px solid rgba(163, 255, 190, 0.4);">
+              <iframe
+                loading="lazy"
+                width="100%"
+                height="220"
+                src="https://www.youtube.com/embed/N9J2N94ZrB8"
+                title="Social Media Marketing Case Study"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BLOG & ADMIN -->
+      <section id="blog">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="section-label">Insights</div>
+              <h2 class="section-title">Blog & Growth Playbooks.</h2>
+            </div>
+            <p class="section-subtitle">
+              Stay ahead of algorithm changes, new ad formats, and content
+              trends with fresh, tactical articles from our team.
+            </p>
+          </div>
+
+          <div class="section-card reveal">
+            <div class="blog-layout">
+              <div>
+                <div class="blog-search-row">
+                  <input
+                    id="blogSearch"
+                    class="input"
+                    type="search"
+                    placeholder="Search posts by title or keywords…"
+                  />
+                  <select id="blogCategoryFilter" class="input" style="flex: 0 0 150px;">
+                    <option value="all">All categories</option>
+                    <option value="SEO">SEO</option>
+                    <option value="Social Media Trends">Social Media Trends</option>
+                    <option value="Content Marketing">Content Marketing</option>
+                  </select>
+                </div>
+
+                <div class="blog-list" id="blogList">
+                  <!-- Blog posts injected by JavaScript -->
+                </div>
+              </div>
+
+              <aside class="admin-panel">
+                <div class="admin-header">
+                  <div>
+                    <strong style="font-size: 0.86rem;">Admin dashboard</strong>
+                    <div class="admin-status" id="adminStatus">
+                      Status: View‑only (enter admin key to manage posts)
+                    </div>
+                  </div>
+                  <button
+                    class="btn btn-outline"
+                    style="padding: 5px 10px; font-size: 0.76rem;"
+                    id="toggleAdmin"
+                    type="button"
+                  >
+                    Admin Login
+                  </button>
+                </div>
+
+                <form class="admin-form" id="adminForm">
+                  <div>
+                    <label for="postTitle">Post title</label>
+                    <input
+                      id="postTitle"
+                      class="input"
+                      type="text"
+                      required
+                      placeholder="E.g. 7 hooks that double your Reels watch time"
+                    />
+                  </div>
+                  <div>
+                    <label for="postCategory">Category</label>
+                    <select id="postCategory" class="input" required>
+                      <option value="SEO">SEO</option>
+                      <option value="Social Media Trends">Social Media Trends</option>
+                      <option value="Content Marketing">Content Marketing</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="postExcerpt">Short summary</label>
+                    <textarea
+                      id="postExcerpt"
+                      class="textarea"
+                      required
+                      placeholder="One or two lines describing the key takeaway."
+                    ></textarea>
+                  </div>
+                  <div>
+                    <label for="postImage">Featured image URL (optional)</label>
+                    <input
+                      id="postImage"
+                      class="input"
+                      type="url"
+                      placeholder="https://…"
+                    />
+                  </div>
+                  <button
+                    class="btn btn-primary"
+                    type="submit"
+                    style="justify-content: center; font-size: 0.8rem;"
+                  >
+                    Save Post
+                  </button>
+                  <p style="font-size: 0.7rem; color: var(--text-muted); margin: 4px 0 0;">
+                    Admin key is stored only in this browser session (no server).
+                  </p>
+                </form>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="section-label">About</div>
+              <h2 class="section-title">The team behind the playbooks.</h2>
+            </div>
+            <p class="section-subtitle">
+              We’re strategists, media buyers, creatives, and analysts obsessed
+              with turning social into a predictable growth channel.
+            </p>
+          </div>
+
+          <div class="section-card reveal">
+            <div class="about-layout">
+              <div>
+                <p class="about-text">
+                  GrowthHive Media was born inside fast‑growing startups that
+                  needed more than “just content”. We built a full‑funnel
+                  approach that combines thumb‑stopping creative, smart paid
+                  distribution, and disciplined experimentation.
+                </p>
+
+                <div class="mission-grid">
+                  <div class="mission-card">
+                    <strong style="font-size: 0.84rem;">Our mission</strong>
+                    <p style="margin: 4px 0 0; color: var(--text-muted);">
+                      Help brands build meaningful relationships at scale and
+                      turn attention into revenue using social.
+                    </p>
+                  </div>
+                  <div class="mission-card">
+                    <strong style="font-size: 0.84rem;">Our vision</strong>
+                    <p style="margin: 4px 0 0; color: var(--text-muted);">
+                      Be the go‑to growth partner for digital‑first brands
+                      globally, across social and search.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="team-grid">
+                  <article class="team-card">
+                    <div
+                      class="team-avatar"
+                      style="background-image: url('https://images.pexels.com/photos/1181570/pexels-photo-1181570.jpeg?auto=compress&cs=tinysrgb&w=400');"
+                    ></div>
+                    <div class="team-name">Aarav Mehta</div>
+                    <div class="team-role">Founder & Head of Strategy</div>
+                    <div class="team-socials">
+                      <a href="#">in</a>
+                      <a href="#">x</a>
+                    </div>
+                  </article>
+
+                  <article class="team-card">
+                    <div
+                      class="team-avatar"
+                      style="background-image: url('https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=400');"
+                    ></div>
+                    <div class="team-name">Sara Kapoor</div>
+                    <div class="team-role">Creative Director</div>
+                    <div class="team-socials">
+                      <a href="#">ig</a>
+                      <a href="#">in</a>
+                    </div>
+                  </article>
+
+                  <article class="team-card">
+                    <div
+                      class="team-avatar"
+                      style="background-image: url('https://images.pexels.com/photos/1181719/pexels-photo-1181719.jpeg?auto=compress&cs=tinysrgb&w=400');"
+                    ></div>
+                    <div class="team-name">Rahul Singh</div>
+                    <div class="team-role">Lead Media Buyer</div>
+                    <div class="team-socials">
+                      <a href="#">in</a>
+                      <a href="#">x</a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+
+              <div class="about-video">
+                <iframe
+                  loading="lazy"
+                  width="100%"
+                  height="260"
+                  src="https://www.youtube.com/embed/tNamM9jvYtY"
+                  title="Brand Story - GrowthHive Media"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="section-label">Contact</div>
+              <h2 class="section-title">
+                Let’s audit your social in 30 minutes.
+              </h2>
+            </div>
+            <p class="section-subtitle">
+              Share a few details about your brand and current channels—our team
+              will prepare a quick wins report before our call.
+            </p>
+          </div>
+
+          <div class="contact-wrapper reveal">
+            <form id="contactForm" class="contact-form-grid" novalidate>
+              <div>
+                <label for="name">Name</label>
+                <input
+                  id="name"
+                  class="input"
+                  type="text"
+                  name="name"
+                  required
+                  placeholder="Your full name"
+                />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  class="input"
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="you@example.com"
+                />
+              </div>
+              <div>
+                <label for="phone">Phone</label>
+                <input
+                  id="phone"
+                  class="input"
+                  type="tel"
+                  name="phone"
+                  placeholder="+91‑"
+                />
+              </div>
+              <div>
+                <label for="message">Project details</label>
+                <textarea
+                  id="message"
+                  class="textarea"
+                  name="message"
+                  required
+                  placeholder="Tell us about your business, current channels, and goals."
+                ></textarea>
+              </div>
+              <button
+                class="btn btn-primary"
+                type="submit"
+                style="margin-top: 4px; justify-content: center; font-size: 0.84rem;"
+              >
+                Submit &amp; schedule audit
+              </button>
+              <p
+                id="contactFeedback"
+                style="font-size: 0.76rem; color: var(--text-muted); margin: 4px 0 0;"
+              >
+                We’ll get back within one business day.
+              </p>
+            </form>
+
+            <div class="contact-side">
+              <div class="contact-map">
+                <iframe
+                  loading="lazy"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.78078773226!2d78.44003867504375!3d17.42169698346066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb973fed700001%3A0xef07eb82466e0e5d!2sHyderabad%20Knowledge%20City!5e0!3m2!1sen!2sin!4v1708250000000!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  style="border: 0"
+                  allowfullscreen=""
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+
+              <div>
+                <strong style="font-size: 0.86rem;">Connect with us</strong>
+                <div class="social-row">
+                  <a class="social-pill" href="#">Instagram</a>
+                  <a class="social-pill" href="#">LinkedIn</a>
+                  <a class="social-pill" href="#">YouTube</a>
+                  <a class="social-pill" href="#">X (Twitter)</a>
+                </div>
+                <a
+                  class="whatsapp-btn"
+                  href="https://wa.me/919876543210?text=Hi%20GrowthHive%20team%2C%20I%27d%20love%20to%20discuss%20my%20social%20media%20strategy."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>💬</span>
+                  WhatsApp us
+                </a>
+              </div>
+
+              <div>
+                <strong style="font-size: 0.86rem;">Newsletter</strong>
+                <p style="margin: 4px 0 0; font-size: 0.78rem; color: var(--text-muted);">
+                  Get one tactical growth idea in your inbox every week—no spam,
+                  just swipe‑worthy plays.
+                </p>
+                <form id="newsletterForm" class="newsletter-row">
+                  <input
+                    id="newsletterEmail"
+                    class="input"
+                    type="email"
+                    placeholder="you@example.com"
+                    required
+                  />
+                  <button
+                    class="btn btn-outline"
+                    style="font-size: 0.8rem; padding-inline: 14px;"
+                  >
+                    Join List
+                  </button>
+                </form>
+                <p
+                  id="newsletterFeedback"
+                  style="font-size: 0.72rem; color: var(--text-muted); margin: 4px 0 0;"
+                ></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ANALYTICS DASHBOARD + SOCIAL FEED + GALLERY -->
+      <section id="analytics">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="section-label">Dashboard</div>
+              <h2 class="section-title">Analytics, social feed & gallery.</h2>
+            </div>
+            <p class="section-subtitle">
+              A snapshot view of performance metrics, live social snippets, and
+              creative library—all visualized for quick reviews.
+            </p>
+          </div>
+
+          <div class="section-card reveal">
+            <div class="analytics-grid">
+              <article class="analytics-card">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                  <span>Engagement rate</span>
+                  <span id="metricEngagement">0%</span>
+                </div>
+                <div class="progress-bar">
+                  <div
+                    id="engagementBar"
+                    class="progress-fill"
+                    data-target="78"
+                  ></div>
+                </div>
+                <p style="margin: 4px 0 0; font-size: 0.74rem; color: var(--text-muted);">
+                  Week over week +24% with new content series.
+                </p>
+              </article>
+
+              <article class="analytics-card">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                  <span>Click‑through rate</span>
+                  <span id="metricCTR">0%</span>
+                </div>
+                <div class="progress-bar">
+                  <div id="ctrBar" class="progress-fill" data-target="62"></div>
+                </div>
+                <p style="margin: 4px 0 0; font-size: 0.74rem; color: var(--text-muted);">
+                  Retested hooks + tighter targeting for key audiences.
+                </p>
+              </article>
+
+              <article class="analytics-card">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                  <span>Retention & loyalty</span>
+                  <span id="metricRetention">0%</span>
+                </div>
+                <div class="progress-bar">
+                  <div
+                    id="retentionBar"
+                    class="progress-fill"
+                    data-target="84"
+                  ></div>
+                </div>
+                <p style="margin: 4px 0 0; font-size: 0.74rem; color: var(--text-muted);">
+                  Lifecycle campaigns to nurture and reactivate buyers.
+                </p>
+              </article>
+            </div>
+
+            <div style="margin-top: 14px; display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.6fr); gap: 14px;">
+              <div>
+                <h3 style="font-size: 0.9rem; margin: 0 0 4px;">
+                  Social feed snapshot (mocked)
+                </h3>
+                <p style="margin: 0 0 8px; font-size: 0.78rem; color: var(--text-muted);">
+                  Example of how a live Instagram/Twitter feed integration could
+                  look. Replace this mock data with real API data when connected
+                  to your backend.
+                </p>
+                <div class="feed-grid" id="socialFeed">
+                  <!-- Feed cards via JS -->
+                </div>
+              </div>
+
+              <div>
+                <h3 style="font-size: 0.9rem; margin: 0 0 8px;">
+                  Creative gallery
+                </h3>
+                <div class="gallery-grid" id="galleryGrid">
+                  <figure data-type="image">
+                    <img
+                      loading="lazy"
+                      src="https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&cs=tinysrgb&w=400"
+                      alt="Team planning content calendar"
+                    />
+                  </figure>
+                  <figure data-type="image">
+                    <img
+                      loading="lazy"
+                      src="https://images.pexels.com/photos/1181315/pexels-photo-1181315.jpeg?auto=compress&cs=tinysrgb&w=400"
+                      alt="Social media dashboard"
+                    />
+                  </figure>
+                  <figure data-type="image">
+                    <img
+                      loading="lazy"
+                      src="https://images.pexels.com/photos/6476588/pexels-photo-6476588.jpeg?auto=compress&cs=tinysrgb&w=400"
+                      alt="Creative brainstorming"
+                    />
+                  </figure>
+                  <figure data-type="video">
+                    <img
+                      loading="lazy"
+                      src="https://images.pexels.com/photos/6898850/pexels-photo-6898850.jpeg?auto=compress&cs=tinysrgb&w=400"
+                      alt="Marketing video preview"
+                    />
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+        ✕
+      </button>
+      <div id="lightboxContent"></div>
+    </div>
+
+    <!-- LIVE CHAT PLACEHOLDER -->
+    <div class="floating-live-chat">
+      <button class="live-chat-btn" type="button" id="liveChatBtn">
+        <span>💬</span>
+        Live chat
+      </button>
+    </div>
+
+    <footer>
+      <div class="container footer-inner">
+        <span>© <span id="year"></span> GrowthHive Media. All rights reserved.</span>
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#blog">Blog</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // THEME TOGGLE
+      (function () {
+        const toggle = document.getElementById("modeToggle");
+        const storedTheme = localStorage.getItem("gh-theme");
+        if (storedTheme === "light") {
+          document.body.classList.add("light");
+        }
+        toggle.addEventListener("click", () => {
+          document.body.classList.toggle("light");
+          const mode = document.body.classList.contains("light")
+            ? "light"
+            : "dark";
+          localStorage.setItem("gh-theme", mode);
+        });
+      })();
+
+      // NAV MOBILE
+      (function () {
+        const navToggle = document.getElementById("navToggle");
+        const navLinks = document.getElementById("navLinks");
+        navToggle.addEventListener("click", () => {
+          navLinks.classList.toggle("open");
+        });
+        navLinks.addEventListener("click", (e) => {
+          if (e.target.tagName === "A") {
+            navLinks.classList.remove("open");
+          }
+        });
+      })();
+
+      // HERO COUNTERS
+      (function () {
+        const counters = document.querySelectorAll(".stat-number");
+        const speed = 500;
+        const observer = new IntersectionObserver(
+          (entries, obs) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                counters.forEach((counter) => {
+                  const target = parseFloat(counter.getAttribute("data-count"));
+                  let current = 0;
+                  const step = () => {
+                    const increment = target / speed * 16;
+                    current += increment;
+                    if (current < target) {
+                      counter.textContent =
+                        target % 1 === 0
+                          ? Math.floor(current)
+                          : current.toFixed(1);
+                      requestAnimationFrame(step);
+                    } else {
+                      counter.textContent =
+                        target % 1 === 0 ? target.toFixed(0) : target.toFixed(1);
+                    }
+                  };
+                  step();
+                });
+                obs.disconnect();
+              }
+            });
+          },
+          { threshold: 0.3 }
+        );
+        const statsSection = document.querySelector(".stats");
+        if (statsSection) observer.observe(statsSection);
+      })();
+
+      // TESTIMONIAL SLIDER
+      (function () {
+        const testimonials = [
+          {
+            text:
+              "GrowthHive rebuilt our paid social from scratch and helped us unlock profitable scale in less than 60 days.",
+            name: "Riya Sharma",
+            title: "CMO, NovaWear",
+            initials: "RS",
+          },
+          {
+            text:
+              "Smart, proactive partners. The team plugged into our marketing squad and treated our goals like their own.",
+            name: "Aditya Verma",
+            title: "Head of Growth, CloudDesk",
+            initials: "AV",
+          },
+          {
+            text:
+              "From content calendar to creative production and analytics, we finally have visibility across our social.",
+            name: "Neha Patel",
+            title: "Founder, UrbanBrew",
+            initials: "NP",
+          },
+        ];
+
+        const container = document.createElement("div");
+        container.className = "testimonial-slider-inner";
+        const card = document.createElement("div");
+        card.className = "testimonial-card";
+        card.innerHTML = `
+          <p class="testimonial-text"></p>
+          <div class="testimonial-meta">
+            <div class="testimonial-user">
+              <div class="testimonial-avatar"></div>
+              <div>
+                <div class="testimonial-name" style="font-size:0.82rem;"></div>
+                <div class="testimonial-role" style="font-size:0.74rem;"></div>
+              </div>
+            </div>
+            <span style="font-size:0.74rem;color:var(--accent);">★★★★★</span>
+          </div>
+        `;
+        container.appendChild(card);
+
+        const host = document.createElement("div");
+        host.className = "testimonial-slider";
+        host.appendChild(container);
+
+        const targetColumn = document.querySelector(
+          "#services .section-card + *"
+        );
+
+        // Instead, place slider in testimonials layout area:
+        // Build testimonials wrapper programmatically below services
+      })();
+
+      // Instead of attaching slider in JS above, we embed simple slider HTML into DOM:
+      (function () {
+        const sliderHost = document.createElement("section");
+        sliderHost.innerHTML = `
+          <div class="section-header container" style="margin-top:6px;">
+            <div>
+              <div class="section-label">Proof</div>
+              <h2 class="section-title">Clients who grew with us.</h2>
+            </div>
+            <p class="section-subtitle">
+              Testimonials and logos from partners we’ve helped scale with social.
+            </p>
+          </div>
+          <div class="container">
+            <div class="section-card reveal">
+              <div class="testimonials-layout">
+                <div>
+                  <div class="testimonial-card" id="testimonialCard">
+                    <p class="testimonial-text" id="testimonialText"></p>
+                    <div class="testimonial-meta">
+                      <div class="testimonial-user">
+                        <div class="testimonial-avatar" id="testimonialAvatar">GH</div>
+                        <div>
+                          <div class="testimonial-name" id="testimonialName" style="font-size:0.82rem;"></div>
+                          <div class="testimonial-role" id="testimonialRole" style="font-size:0.74rem;"></div>
+                        </div>
+                      </div>
+                      <span style="font-size:0.74rem;color:var(--accent);">★★★★★</span>
+                    </div>
+                    <div class="testimonial-controls">
+                      <button class="circle-btn" id="testimonialPrev" type="button">‹</button>
+                      <button class="circle-btn" id="testimonialNext" type="button">›</button>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="logos-grid">
+                    <div class="logo-card">NovaWear · Fashion</div>
+                    <div class="logo-card">UrbanBrew · Coffee</div>
+                    <div class="logo-card">CloudDesk · SaaS</div>
+                    <div class="logo-card">ZenFit · Fitness</div>
+                    <div class="logo-card">FreshKart · Grocery</div>
+                    <div class="logo-card">GlowLab · Beauty</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+        const portfolioSection = document.getElementById("portfolio");
+        portfolioSection.parentNode.insertBefore(
+          sliderHost,
+          portfolioSection
+        );
+
+        const testimonials = [
+          {
+            text:
+              "GrowthHive rebuilt our paid social from scratch and helped us unlock profitable scale in less than 60 days.",
+            name: "Riya Sharma",
+            title: "CMO, NovaWear",
+            initials: "RS",
+          },
+          {
+            text:
+              "Smart, proactive partners. The team plugged into our marketing squad and treated our goals like their own.",
+            name: "Aditya Verma",
+            title: "Head of Growth, CloudDesk",
+            initials: "AV",
+          },
+          {
+            text:
+              "From content calendar to creative production and analytics, we finally have visibility across our social.",
+            name: "Neha Patel",
+            title: "Founder, UrbanBrew",
+            initials: "NP",
+          },
+        ];
+
+        let idx = 0;
+        const textEl = document.getElementById("testimonialText");
+        const nameEl = document.getElementById("testimonialName");
+        const roleEl = document.getElementById("testimonialRole");
+        const avatarEl = document.getElementById("testimonialAvatar");
+        const prevBtn = document.getElementById("testimonialPrev");
+        const nextBtn = document.getElementById("testimonialNext");
+
+        function renderTestimonial() {
+          const t = testimonials[idx];
+          textEl.textContent = t.text;
+          nameEl.textContent = t.name;
+          roleEl.textContent = t.title;
+          avatarEl.textContent = t.initials;
+        }
+
+        prevBtn.addEventListener("click", () => {
+          idx = (idx - 1 + testimonials.length) % testimonials.length;
+          renderTestimonial();
+        });
+        nextBtn.addEventListener("click", () => {
+          idx = (idx + 1) % testimonials.length;
+          renderTestimonial();
+        });
+
+        renderTestimonial();
+      })();
+
+      // PORTFOLIO FILTER
+      (function () {
+        const buttons = document.querySelectorAll(".filter-btn");
+        const items = document.querySelectorAll(".portfolio-card");
+        buttons.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            buttons.forEach((b) => b.classList.remove("active"));
+            btn.classList.add("active");
+            const filter = btn.getAttribute("data-filter");
+            items.forEach((item) => {
+              const category = item.getAttribute("data-category");
+              const show =
+                filter === "all" || category === filter ? "block" : "none";
+              item.style.display = show;
+            });
+          });
+        });
+      })();
+
+      // BLOG + ADMIN (front-end only with localStorage)
+      (function () {
+        const defaultPosts = [
+          {
+            id: "1",
+            title: "7 hooks that double your Reels watch time",
+            category: "Content Marketing",
+            excerpt:
+              "Use pattern interrupts, bold promises, and open loops to keep viewers watching past the first 3 seconds.",
+            image:
+              "https://images.pexels.com/photos/6898851/pexels-photo-6898851.jpeg?auto=compress&cs=tinysrgb&w=400",
+            date: "Today",
+          },
+          {
+            id: "2",
+            title: "SEO for social‑first brands in 2026",
+            category: "SEO",
+            excerpt:
+              "Why search‑optimized content on your site and social profiles work together better than ever.",
+            image:
+              "https://images.pexels.com/photos/6476589/pexels-photo-6476589.jpeg?auto=compress&cs=tinysrgb&w=400",
+            date: "This week",
+          },
+          {
+            id: "3",
+            title: "Paid social frameworks for profitable scale",
+            category: "Social Media Trends",
+            excerpt:
+              "Creative testing, learning agendas, and budget allocation structures you can borrow today.",
+            image:
+              "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=400",
+            date: "This month",
+          },
+        ];
+
+        const STORAGE_KEY = "gh-blog-posts";
+        const ADMIN_KEY = "gh-admin-auth";
+
+        function loadPosts() {
+          const raw = localStorage.getItem(STORAGE_KEY);
+          if (!raw) {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(defaultPosts));
+            return defaultPosts.slice();
+          }
+          try {
+            const parsed = JSON.parse(raw);
+            return Array.isArray(parsed) && parsed.length ? parsed : defaultPosts.slice();
+          } catch {
+            return defaultPosts.slice();
+          }
+        }
+
+        function savePosts(posts) {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(posts));
+        }
+
+        let posts = loadPosts();
+
+        const listEl = document.getElementById("blogList");
+        const searchInput = document.getElementById("blogSearch");
+        const categoryFilter = document.getElementById("blogCategoryFilter");
+
+        function renderPosts() {
+          const query = searchInput.value.toLowerCase();
+          const category = categoryFilter.value;
+          listEl.innerHTML = "";
+          posts
+            .filter((p) => {
+              const matchCat =
+                category === "all" || p.category === category;
+              const matchQuery =
+                !query ||
+                p.title.toLowerCase().includes(query) ||
+                p.excerpt.toLowerCase().includes(query);
+              return matchCat && matchQuery;
+            })
+            .forEach((p) => {
+              const card = document.createElement("article");
+              card.className = "blog-card";
+              card.innerHTML = `
+                <div class="blog-thumb">
+                  <img loading="lazy" src="${
+                    p.image ||
+                    "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  }" alt="${p.title}" />
+                </div>
+                <div class="blog-body">
+                  <strong>${p.title}</strong>
+                  <p style="margin:4px 0 0;color:var(--text-muted);">${p.excerpt}</p>
+                  <div class="blog-meta">
+                    <span class="badge-category">${p.category}</span>
+                    <span>${p.date || "Recently"}</span>
+                  </div>
+                </div>
+              `;
+              listEl.appendChild(card);
+            });
+          if (!listEl.children.length) {
+            listEl.innerHTML =
+              '<p style="font-size:0.8rem;color:var(--text-muted);margin:4px 0 0;">No posts match your filters yet.</p>';
+          }
+        }
+
+        searchInput.addEventListener("input", renderPosts);
+        categoryFilter.addEventListener("change", renderPosts);
+        renderPosts();
+
+        // Admin auth (simple, client‑side only)
+        const adminForm = document.getElementById("adminForm");
+        const toggleAdmin = document.getElementById("toggleAdmin");
+        const adminStatus = document.getElementById("adminStatus");
+
+        function isAdmin() {
+          return localStorage.getItem(ADMIN_KEY) === "1";
+        }
+
+        function updateAdminUI() {
+          const disabled = !isAdmin();
+          adminForm
+            .querySelectorAll("input, textarea, select, button[type='submit']")
+            .forEach((el) => (el.disabled = disabled));
+          adminStatus.textContent = isAdmin()
+            ? "Status: Admin mode (you can add posts; stored only on this device)."
+            : "Status: View‑only (enter admin key to manage posts).";
+          toggleAdmin.textContent = isAdmin() ? "Logout" : "Admin Login";
+        }
+
+        toggleAdmin.addEventListener("click", () => {
+          if (isAdmin()) {
+            localStorage.removeItem(ADMIN_KEY);
+          } else {
+            const key = prompt("Enter admin key (demo: growthhive)");
+            if (key === "growthhive") {
+              localStorage.setItem(ADMIN_KEY, "1");
+            } else if (key) {
+              alert("Incorrect key. Hint: growthhive");
+            }
+          }
+          updateAdminUI();
+        });
+
+        adminForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          if (!isAdmin()) {
+            alert("You must be in admin mode to add posts.");
+            return;
+          }
+          const title = document.getElementById("postTitle").value.trim();
+          const category = document.getElementById("postCategory").value;
+          const excerpt = document.getElementById("postExcerpt").value.trim();
+          const image = document.getElementById("postImage").value.trim();
+          if (!title || !excerpt) return;
+          const newPost = {
+            id: Date.now().toString(),
+            title,
+            category,
+            excerpt,
+            image,
+            date: "Just now",
+          };
+          posts.unshift(newPost);
+          savePosts(posts);
+          adminForm.reset();
+          renderPosts();
+        });
+
+        updateAdminUI();
+      })();
+
+      // CONTACT FORM (front‑end validation only)
+      (function () {
+        const form = document.getElementById("contactForm");
+        const feedback = document.getElementById("contactFeedback");
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          if (!form.checkValidity()) {
+            feedback.textContent =
+              "Please fill in all required fields before submitting.";
+            feedback.style.color = "var(--danger)";
+            return;
+          }
+          feedback.textContent =
+            "Thank you! Your details have been captured. We’ll be in touch shortly.";
+          feedback.style.color = "var(--accent)";
+          form.reset();
+        });
+      })();
+
+      // NEWSLETTER (localStorage)
+      (function () {
+        const form = document.getElementById("newsletterForm");
+        const emailInput = document.getElementById("newsletterEmail");
+        const feedback = document.getElementById("newsletterFeedback");
+        const KEY = "gh-newsletter-subs";
+
+        function loadSubs() {
+          try {
+            const raw = localStorage.getItem(KEY);
+            if (!raw) return [];
+            const parsed = JSON.parse(raw);
+            return Array.isArray(parsed) ? parsed : [];
+          } catch {
+            return [];
+          }
+        }
+
+        function saveSubs(list) {
+          localStorage.setItem(KEY, JSON.stringify(list));
+        }
+
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const email = emailInput.value.trim();
+          if (!email) return;
+          const subs = loadSubs();
+          if (!subs.includes(email)) {
+            subs.push(email);
+            saveSubs(subs);
+          }
+          feedback.textContent =
+            "Subscribed! You can unsubscribe anytime from the footer link (in a real deployment).";
+          emailInput.value = "";
+        });
+      })();
+
+      // ANALYTICS BARS
+      (function () {
+        const bars = [
+          { id: "engagementBar", metricId: "metricEngagement" },
+          { id: "ctrBar", metricId: "metricCTR" },
+          { id: "retentionBar", metricId: "metricRetention" },
+        ];
+
+        const observer = new IntersectionObserver(
+          (entries, obs) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                bars.forEach(({ id, metricId }) => {
+                  const el = document.getElementById(id);
+                  const metricEl = document.getElementById(metricId);
+                  const target = parseInt(el.getAttribute("data-target"), 10);
+                  let current = 0;
+                  const anim = () => {
+                    current += 2;
+                    if (current <= target) {
+                      el.style.width = current + "%";
+                      metricEl.textContent = current + "%";
+                      requestAnimationFrame(anim);
+                    } else {
+                      el.style.width = target + "%";
+                      metricEl.textContent = target + "%";
+                    }
+                  };
+                  anim();
+                });
+                obs.disconnect();
+              }
+            });
+          },
+          { threshold: 0.3 }
+        );
+
+        const analyticsSection = document.getElementById("analytics");
+        observer.observe(analyticsSection);
+      })();
+
+      // SOCIAL FEED MOCK
+      (function () {
+        const feed = document.getElementById("socialFeed");
+        const items = [
+          {
+            platform: "Instagram",
+            text: "Swipe‑able carousel breakdown of 4 top‑performing hooks in 2026.",
+            time: "2h ago",
+          },
+          {
+            platform: "Twitter",
+            text: "Thread: Why creative testing beats targeting tweaks 9 times out of 10.",
+            time: "5h ago",
+          },
+          {
+            platform: "LinkedIn",
+            text: "Case study: How we helped a B2B SaaS reduce CPL by 38%.",
+            time: "Yesterday",
+          },
+        ];
+        items.forEach((item) => {
+          const card = document.createElement("article");
+          card.className = "feed-card";
+          card.innerHTML = `
+            <strong style="font-size:0.8rem;">${item.platform}</strong>
+            <p style="margin:4px 0 0;">${item.text}</p>
+            <p style="margin:4px 0 0;font-size:0.72rem;color:var(--text-muted);">${item.time}</p>
+          `;
+          feed.appendChild(card);
+        });
+      })();
+
+      // GALLERY LIGHTBOX
+      (function () {
+        const lightbox = document.getElementById("lightbox");
+        const lightboxContent = document.getElementById("lightboxContent");
+        const closeBtn = document.getElementById("lightboxClose");
+        const items = document.querySelectorAll("#galleryGrid figure");
+
+        items.forEach((item, index) => {
+          item.addEventListener("click", () => {
+            const type = item.getAttribute("data-type");
+            const img = item.querySelector("img");
+            lightboxContent.innerHTML = "";
+            if (type === "video" && index === items.length - 1) {
+              const video = document.createElement("video");
+              video.controls = true;
+              video.autoplay = true;
+              video.loop = true;
+              video.muted = false;
+              video.innerHTML = `
+                <source src="https://videos.pexels.com/video-files/6898851/6898851-uhd_2560_1440_30fps.mp4" type="video/mp4" />
+              `;
+              lightboxContent.appendChild(video);
+            } else {
+              const clone = img.cloneNode(true);
+              lightboxContent.appendChild(clone);
+            }
+            lightbox.classList.add("active");
+          });
+        });
+
+        closeBtn.addEventListener("click", () => {
+          lightbox.classList.remove("active");
+          lightboxContent.innerHTML = "";
+        });
+
+        lightbox.addEventListener("click", (e) => {
+          if (e.target === lightbox) {
+            lightbox.classList.remove("active");
+            lightboxContent.innerHTML = "";
+          }
+        });
+      })();
+
+      // REVEAL ON SCROLL
+      (function () {
+        const elements = document.querySelectorAll(".reveal");
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.2 }
+        );
+        elements.forEach((el) => observer.observe(el));
+      })();
+
+      // LIVE CHAT MOCK
+      (function () {
+        const btn = document.getElementById("liveChatBtn");
+        btn.addEventListener("click", () => {
+          alert(
+            "This is a live chat placeholder. In production, this is where a widget like Intercom, Crisp, or WhatsApp Web chat would open."
+          );
+        });
+      })();
+
+      // FOOTER YEAR
+      (function () {
+        const year = document.getElementById("year");
+        year.textContent = new Date().getFullYear();
+      })();
+    </script>
+  </body>
 </html>
